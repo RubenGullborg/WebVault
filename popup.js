@@ -20,6 +20,7 @@ document.getElementById("archiveBtn").addEventListener("click", async () => {
           title: document.title,
           url: window.location.href,
           body: document.body.innerText,
+          html: document.documentElement.outerHTML,
           timestamp: new Date().toISOString()
         };
         return content;

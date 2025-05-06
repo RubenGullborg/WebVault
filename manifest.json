@@ -12,5 +12,11 @@
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["snapshots.html", "snapshots.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
